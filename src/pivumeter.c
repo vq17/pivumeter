@@ -1,4 +1,4 @@
-/*
+    /*
  *   pivumeter :  level meter ALSA plugin for Raspberry Pi HATs and pHATs
  *   Copyright (c) 2017 by Phil Howard <phil@pimoroni.com>
  *
@@ -253,6 +253,13 @@ int set_output_device(const char *output_device_name){
     if(strcmp(output_device_name, "phat-beat") == 0){
         fprintf(stderr, "Using device: phat-beat\n");
         output_device = phat_beat();
+        return 0;
+    }
+#endif
+#ifdef WITH_DEVICE_MINI
+    if(strcmp(output_device_name, "mini") == 0){
+        fprintf(stderr, "Using device: mini\n");
+        output_device = mini();
         return 0;
     }
 #endif
