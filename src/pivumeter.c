@@ -32,7 +32,8 @@
 #include "pivumeter.h"
 #include <alsa/asoundlib.h>
 
-#include "devices/all.h"
+// #include "devices/all.h"
+#include "devices/mini.h"
 
 /* milliseconds to go from 32767 to 0 */
 #define DECAY_MS 200
