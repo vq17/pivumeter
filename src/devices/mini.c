@@ -51,7 +51,7 @@ static int init(void){
 static void update(int meter_level_l, int meter_level_r, snd_pcm_scope_ameter_t *level){
     // Here write to a file
     FILE *fp;
-    fp = fopen(OUTPUTFILE);
+    fp = fopen(OUTPUTFILE,'w');
 
     fprintf(fp, "%d %d\n",meter_level_l,meter_level_r);
     fclose(fp);

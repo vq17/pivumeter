@@ -2,4 +2,5 @@
 #include "speaker-phat.h"
 #include "scroll-phat.h"
 #include "phat-beat.h"
+#include "mini.h"
 #include "scroll-phat-hd.h"
