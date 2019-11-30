@@ -5,34 +5,34 @@
 #include <wiringPiI2C.h>
 #include "../pivumeter.h"
 
-#define DAT 23
-#define CLK 24
+// #define DAT 23
+// #define CLK 24
 
 #define OUTPUTFILE "/home/pi/audioLevels"
 
 
-static void sof(void){
-    int x;
-    for(x = 0; x<4; x++){
-        write_byte(0);
-    }
-}
+// static void sof(void){
+//     int x;
+//     for(x = 0; x<4; x++){
+//         write_byte(0);
+//     }
+// }
 
-static void eof(void){
-    int x;
-    for(x = 0; x<5; x++){
-        write_byte(0);
-    }
-}
+// static void eof(void){
+//     int x;
+//     for(x = 0; x<5; x++){
+//         write_byte(0);
+//     }
+// }
 
 
-static void clear_display(void){
-    int x;
-    for(x = 0; x < NUM_PIXELS; x++){
-        pixels[x] = 0;
-    }
-    show();
-}
+// static void clear_display(void){
+//     int x;
+//     for(x = 0; x < NUM_PIXELS; x++){
+//         pixels[x] = 0;
+//     }
+//     show();
+// }
 
 static int init(void){
     // system("gpio export 23 output");
